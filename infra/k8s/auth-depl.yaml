@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: ethanblumenthal/auth
+          image: us.gcr.io/deft-ellipse-286120/auth
 ---
 apiVersion: v1
 kind: Service

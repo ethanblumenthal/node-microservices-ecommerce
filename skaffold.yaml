@@ -5,10 +5,10 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  googleCloudBuild:
+    projectId: deft-ellipse-286120
   artifacts:
-    - image: ethanblumenthal/auth
+    - image: us.gcr.io/deft-ellipse-286120/auth
       context: auth
       docker:
         dockerfile: Dockerfile
